@@ -1,0 +1,15 @@
+server:
+  #
+  # CORS (Cross Origin Resource Sharing)
+  #
+  cors:
+    # List of accepted origins
+    origins:
+      - https://studio.apollographql.com
+
+    allow_headers: [Content-Type, Authorization]
+headers:
+  subgraphs:
+    accounts:
+      - propagate:
+          named: "Authorization"
